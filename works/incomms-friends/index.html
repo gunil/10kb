@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>inComms Friends</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" href="./css/i-friends.min.css">
+</head>
+<body>
+<div id="wrap" style="display:none">
+<div id="container">
+<div>
+<span class="level">레벨 : <span class="level_cnt">1</span></span>
+<span class="point">0 점</span>
+<div class="user_name">이름</div>
+<div class="sunny"></div>					
+<div id="clouds">
+<div class="cloud x1"></div>
+<div class="cloud x2"></div>
+<div class="cloud x3"></div>
+<div class="cloud x4"></div>
+<div class="cloud x5"></div>
+</div>
+<div class="building">
+<div class="building_top f3"></div>
+<div class="building_top f2">
+<div class="building_shadow s2"></div>
+</div>
+<div class="building_top">
+<div class="name">incomms</div>
+<div class="building_shadow"></div>
+</div>
+<div class="building_body">
+<div class="window"><input type="text" placeholder="Input Text" class="txt_input words_input"></div>
+<div class="window"></div>
+<div class="window"></div>
+</div>
+</div>
+<div class="bubbles bubble-1"></div>
+<div class="bubbles bubble-5"></div>
+<div class="bubbles bubble-2"></div>
+<div class="bubbles bubble-6"></div>
+<div class="bubbles bubble-3"></div>
+<div class="bubbles bubble-7"></div>
+<div class="bubbles bubble-4"></div>
+<div class="bubbles bubble-8"></div>
+</div>
+<div id="game_box">
+</div>
+<div id="water">
+<div id="water-back" class="transition dot3"></div>
+<div id="water-front" class="transition dot3"></div>
+</div>
+<div class="ly_dimmed" style="display:block"></div>
+<div class="login" style="display:block">
+<div class="login-screen">
+<div class="app-title">
+<h1>inComms<br>Friends</h1>
+<a href="#" class="guide">게임가이드</a>
+</div>
+<div class="login-form">
+<div class="control-group">
+<input type="text" class="login-field" value="" placeholder="User name" id="login-name">
+<label class="login-field-icon fui-user" for="login-name"></label>
+</div>
+<a class="btn btn-primary btn-large btn-block btn-start" href="#">START</a>
+</div>
+</div>
+</div>
+
+<div class="lypop_result" style="display:none">
+<div class="table-title">
+<h1>Score Table</h1>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-center">Ranking</th>
+<th class="text-center">Name</th>
+<th class="text-center">Score</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+</tbody>
+</table>
+<div class="effect_btn" id="effect_btn">
+<a href="#" data-hover="Go!" class="btn_restart"><span>Restart</span></a>
+<a href="#" data-hover="click!" class="btn_remove"><span>reset</span></a>
+</div>
+</div>
+<div class="lypop_guide">
+<div class="itr_tit">
+<h1>게임소개</h1>
+</div>
+<div class="itr_con">
+<dl>
+<dt>게임주제</dt>
+<dd>게임을 통한 동료의 얼굴, 이름 알기</dd>
+<dt>게임배경</dt>
+<dd>나는 우리회사의 동료를 얼마나 알고있는가? <br>조직을 결속시키는 첫번째 단추! <br>게임을 통해 동료의 이름과 얼굴을 알고 마주칠땐 반갑게 인사까지!</dd>
+<dt>게임방법</dt>
+<dd>
+<ul>
+<li>하늘에서 내려오는 동료를 타이핑하라!</li>
+<li>동료가 물에 빠지면 회사는 점점 잠긴다.</li>
+<li>빠른 손놀림으로 동료와 회사를 구하라</li>
+<li>모바일에서는 내려오는 동료를 Touch!</li>
+</ul>
+</dd>
+<dt>아이템</dt>
+<dd>
+<ul>
+<li><strong style="color:#cda25a">노랑색 이름</strong>의 동료는 특별한 능력이...</li>
+<li>싹쓸이, 멈춤, 속도 +/-, 이름가리기, 물내리기</li>
+<li>어떤 아이템이 나올지는 복불복!</li>
+<li>아이템 동료도 떨어지면 수면 상승!</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="btn_guide_close">
+<a href="#" class="btn_close"><span>CLOSE</span></a>
+</div>
+</div>
+</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="./js/i-friends.min.js"></script>
+<script src="./js/item_rate.js"></script>
+<script src="./js/venezia.min.js"></script>
+<script src="./js/view_rank.min.js"></script>
+</body>
+</html>

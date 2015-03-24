@@ -1,0 +1,2 @@
+var oRate = (function() {
+var mTable = [];function set(pRateArr) {var table = new Array();var value = 0;var end = 0;var start = 0;for(var i = 0; i < pRateArr.length && end < 100; i++) {if(pRateArr[i] > 0) {end = value + pRateArr[i];if(end > 100) {end = 100;}for(var j = 0; j < pRateArr[i]; j++) {table.push(i);}value + pRateArr[i];}}mTable = table;}function getValue() {var rateRandom = Math.floor(Math.random() * 100);return mTable[rateRandom];}return {setting : function (a) {return set(a);}, getValue : function() {return getValue();}}})();

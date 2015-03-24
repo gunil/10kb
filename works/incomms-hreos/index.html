@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=0.4,maximum-scale=0.4,minimum-scale=0.4,user-scalable=no" /> 
+<title>INCOMMS HEROES</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--[if IE]>
+    <style>
+       body{padding-top:200px;}
+       
+        .ie{cursor:crosshair !important;}    
+    </style>
+
+<![endif]-->
+</head>
+<body class="ie">
+   <section id="intro" class="on" style="text-align:center;background-color:#f6f6f6;z-index:400">
+       <div>
+           <h1>inComms heroes</h1>
+           <p>#1 Rescue heroes</p>
+           <ul class="card">
+                <li class="hero mask1"><div class="character_area" style="background-color:#fad53e"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div></li>
+                 <li class="badguy mask1"><div class="character_area" style="background-color:#fad53e;" title="눈매가 매서운 악당을 잡아주세요!"><img src="target.svg" alt="과녁" style="position:absolute;top:10px;right:13px;z-index:999"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div></li>
+            </ul>
+       </div>
+       <div id="input_wrap">
+           <label for="uid">player id</label>
+           <input type="text" title="영문 최소4글자 최대 8글자만 가능" pattern="[a-z]{4,8}" id="uid" name="1" placeholder="Enter ID" required maxlength="8" autocomplete="on"/>
+           <a href="#" id="uidbtn">enter &gt;</a>  
+       </div>
+   </section><!-- //intro -->
+   
+   <section id="game" class="on">
+        <article>
+           <progress value="15" max="15" id="progress">
+               <span id="prog_span"></span>
+           </progress> <!--//게이지 -->
+            <div class="t3" id="tC">0</div> <!-- //점수 -->
+                <ul id="guide" class="card on">
+                    <li class="hero mask1"><div class="explain">Focus<br>on eyes!!</div><div class="character_area" style="background-color:#fad53e"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div></li>
+                     <li class="badguy mask1"><div class="explain">Shoot only one<br>has bad eyes!</div><div class="character_area" style="background-color:#fad53e;" title="눈매가 매서운 악당을 잡아주세요!"><img src="target.svg" alt="과녁" style="position:absolute;top:0px;right:83px;z-index:999"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div></li>
+                </ul>  
+                
+            <ul class="card">
+                <li data-type="card" class="hero mask1 close">
+                   <botton data-index="0" data-state="false"></botton>
+                    <div class="character_area">
+                        <div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 마스크2 --><div><div class="l"></div><div class="m m1"></div></div><!-- 마스크3 --><div><div class="m m3"></div></div><!-- 마스크4 --><div><!--빨간색 머리 두건--><div class="l l1"></div><!--타원1--><div class="y"></div><!--타원2--><div class="y y1"></div><!--눈밑 빨간색--><div class="m m4"></div></div><!-- 마스크5 --><div><!--눈밑 빨간색--><div class="m m5"></div><!--삼각형1--><div class="i"></div><!--삼각형2--><div class="i i1"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div>
+                    </div>
+                </li>
+                <li data-type="card" class="hero mask2 close">
+                    <botton data-index="1" data-state="false"></botton>
+                    <div class="character_area">
+                        <div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 마스크2 --><div><div class="l"></div><div class="m m1"></div></div><!-- 마스크3 --><div><div class="m m3"></div></div><!-- 마스크4 --><div><!--빨간색 머리 두건--><div class="l l1"></div><!--타원1--><div class="y"></div><!--타원2--><div class="y y1"></div><!--눈밑 빨간색--><div class="m m4"></div></div><!-- 마스크5 --><div><!--눈밑 빨간색--><div class="m m5"></div><!--삼각형1--><div class="i"></div><!--삼각형2--><div class="i i1"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div>
+                    </div>
+                </li>
+                <li data-type="card" class="badguy mask3 close">
+                    <botton data-index="2" data-state="false"></botton>
+                    <div class="character_area"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 마스크2 --><div><div class="l"></div><div class="m m1"></div></div><!-- 마스크3 --><div><div class="m m3"></div></div><!-- 마스크4 --><div><!--빨간색 머리 두건--><div class="l l1"></div><!--타원1--><div class="y"></div><!--타원2--><div class="y y1"></div><!--눈밑 빨간색--><div class="m m4"></div></div><!-- 마스크5 --><div><!--눈밑 빨간색--><div class="m m5"></div><!--삼각형1--><div class="i"></div><!--삼각형2--><div class="i i1"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div>
+                </li>
+                <li data-type="card" class="badguy mask4 close">
+                    <botton data-index="3" data-state="false"></botton>
+                    <div class="character_area"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 마스크2 --><div><div class="l"></div><div class="m m1"></div></div><!-- 마스크3 --><div><div class="m m3"></div></div><!-- 마스크4 --><div><!--빨간색 머리 두건--><div class="l l1"></div><!--타원1--><div class="y"></div><!--타원2--><div class="y y1"></div><!--눈밑 빨간색--><div class="m m4"></div></div><!-- 마스크5 --><div><!--눈밑 빨간색--><div class="m m5"></div><!--삼각형1--><div class="i"></div><!--삼각형2--><div class="i i1"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div>
+                </li>
+                <li data-type="card" class="badguy mask5 close">
+                    <botton data-index="4" data-state="false"></botton>
+                    <div class="character_area"><div class="x"><!-- 마스크1 --><div><div class="l"></div><div class="m"></div></div><!-- 마스크2 --><div><div class="l"></div><div class="m m1"></div></div><!-- 마스크3 --><div><div class="m m3"></div></div><!-- 마스크4 --><div><!--빨간색 머리 두건--><div class="l l1"></div><!--타원1--><div class="y"></div><!--타원2--><div class="y y1"></div><!--눈밑 빨간색--><div class="m m4"></div></div><!-- 마스크5 --><div><!--눈밑 빨간색--><div class="m m5"></div><!--삼각형1--><div class="i"></div><!--삼각형2--><div class="i i1"></div></div><!-- 착한눈 --><div class="hero_eye"><div class="o"></div><div class="o o1"></div><div class="p"></div><div class="p p1"></div><div class="r"></div><div class="r r1"></div></div><!-- 악당 눈--><div class="bad_eye"><div class="o"></div><div class="o o1"></div><div class="p2"></div><div class="p2 p3"></div><div class="r"></div><div class="r r2"></div></div></div><!--입--><div class="k"></div><div class="t"></div><div class="u"></div></div>
+                </li>
+            </ul>
+        </article>
+        <article id="gb">
+            <div>
+                <a href="#" id="startBtn">start</a>
+                <span id="gameId">sadfasdflkj</span>
+                <a href="#" id="home">home</a>
+                <a href="#" id="btnResult">Result</a>
+            </div>
+        </article><!--//버튼-->
+   </section><!-- //game -->
+   <section id="fail" class="" style="z-index:500">
+       <div>
+           <p>game over</p>
+           <p>Oops! You killed the hero!<br>The inComms is doomed because of your mistakes.</p>
+           <a href="#">try again</a>
+       </div>
+   </section><!--//fail-->
+   
+   <section id="result" class="" style="z-index:300">
+        <div class="f">
+            <div class="g">
+                <h1>ranking</h1>
+                <ol id="rank" class="view_lst">
+                <li><span>1</span><span>adveagad</span><span>99999</span></li>
+                </ol>
+            </div>
+            <div class="g">
+                <h1>my score</h1>
+                <dl>
+                <dt>ID</dt>
+                <dd id="result_id">INCOMMS</dd>
+                <dt>SCORE</dt>
+                <dd id="result_score">99999</dd>
+                <dt>RANKING</dt>
+                <dd id="result_ranking">FOOLISH RANK!</dd>
+                </dl>
+            </div>
+            <a href="#" class="h">go back</a>
+        </div>
+   </section><!--//result-->
+<script type="text/javascript" src="view_rank.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
